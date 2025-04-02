@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="contact.css">
+    <title>Lou's Confectionaries - Contact Us</title>
+    <meta charset="utf-8">
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Lou's Confectionaries Logo" width="300">
+        <h1>Lou's Confectionaries</h1>
+        <h2>Contact Us</h2>
+        <nav>
+            <b>
+                <a href="index.html">Home</a> &nbsp; 
+                <a href="menu.html">Menu</a> &nbsp;
+                <a href="services.html">Services</a> &nbsp;
+                <a href="contact.html">Contact us</a>
+            </b>
+        </nav>
+    </header>
+
+    <main class="contact-container">
+        <section class="contact-info">
+            <h3>Contact Information</h3>
+            <div class="info-card">
+                <p><span class="icon">📍</span> 1601 Maple Street, Carrollton, GA</p>
+                <p><span class="icon">📞</span> (999) 565-8888</p>
+                <p><span class="icon">✉️</span> contact@lousconfectionaries.com</p>
+            </div>
+            
+            <div class="hours-card">
+                <h4>Our Opening Hours</h4>
+                <p>Monday-Friday: 8am - 7pm</p>
+                <p>Saturday: 9am - 8pm</p>
+                <p>Sunday: 10am - 5pm</p>
+            </div>
+        </section>
+
+        <section class="contact-form">
+            <h3>Send Us a Message</h3>
+            <form method="post" action="https://webdevbasics.net/scripts/demo.php">
+                <div class="form-group">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required placeholder="e.g., Jane Doe">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="e.g., jane@example.com">
+                </div>
+                
+                <div class="form-group">
+                    <label for="subject">Subject:</label>
+                    <select id="subject" name="subject">
+                        <option value="general">General Inquiry</option>
+                        <option value="order">Order Question</option>
+                        <option value="event">Special Event</option>
+                        <option value="feedback">Feedback</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Your Message:</label>
+                    <textarea id="message" name="message" rows="5" required placeholder="What's on your sweet mind?"></textarea>
+                </div>
+                
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p><b>Copyright &copy; 2025 Lou's Confectionaries<br>
+        All rights reserved.</b></p>
+    </footer>
+</body>
+</html>
