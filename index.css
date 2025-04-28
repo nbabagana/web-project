@@ -100,3 +100,45 @@ p {
     line-height: 20px;
     cursor: pointer;
   }
+.alert {
+      background-color: #f9f9f9;
+      color: #333;
+      padding: 20px;
+      font-size: 18px;
+      text-align: center;
+      border: 1px solid #ccc;
+      margin: 20px 0;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    
+    .closebtn {
+      color: #aaa;
+      font-size: 20px;
+      font-weight: bold;
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      cursor: pointer;
+    }
+
+    .closebtn:hover {
+      color: #000;
+    }
+
+  
+    .subscribe-btn {
+      background-color: #d35400;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      text-align: center;
+      cursor: pointer;
+      border-radius: 5px;
+      text-decoration: none;
+      margin-top: 10px;
+    }
+
+    .subscribe-btn:hover {
+      background-color: #45a049;
+    }
