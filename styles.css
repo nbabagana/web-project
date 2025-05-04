@@ -19,6 +19,9 @@ h2 {
 nav {
     background-color: #d35400;
     padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 nav a {
@@ -26,10 +29,14 @@ nav a {
     text-decoration: none;
     margin: 0 15px;
     font-weight: bold;
+    padding: 5px 10px;
+    transition: all 0.3s ease-in-out;
 }
 
 nav a:hover {
     text-decoration: underline;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
 }
 
 @media screen and (max-width: 600px) {
@@ -48,27 +55,49 @@ nav a:hover {
 ul {
     list-style-type: none;
     padding: 0;
+    align-items: center;
 }
 
 li {
-    background: #fff;
+    background: #FFD580;
     margin: 10px auto;
     padding: 10px;
     border-radius: 5px;
     width: 80%;
     max-width: 500px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    gap: 10px;
+    transition: transform 0.3s ease-in-out;
 }
+
+
+
+li:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+.center-page {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
 @media screen and (max-width: 768px) {
     li {
         width: 90%;
+        flex-direction: column; 
+        text-align: left;
+        padding: 15px;
     }
 }
 
 p {
     font-size: 16px;
     margin-top: 20px;
+    line-height: 1.5;
 }
 
 @media screen and (max-width: 480px) {
@@ -85,6 +114,66 @@ p {
     }
 }
 
+
+
+  .alert {
+    padding: 20px;
+    background-color: #f44336;
+    color: white;
+    margin-bottom: 15px;
+  }
+
+  .closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 24px;
+    line-height: 20px;
+    cursor: pointer;
+  }
+.alert {
+      background-color: #f9f9f9;
+      color: #333;
+      padding: 20px;
+      font-size: 18px;
+      text-align: center;
+      border: 1px solid #ccc;
+      margin: 20px 0;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    
+    .closebtn {
+      color: #aaa;
+      font-size: 20px;
+      font-weight: bold;
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      cursor: pointer;
+    }
+
+    .closebtn:hover {
+      color: #000;
+    }
+
+  
+    .subscribe-btn {
+      background-color: #d35400;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      text-align: center;
+      cursor: pointer;
+      border-radius: 5px;
+      text-decoration: none;
+      margin-top: 10px;
+    }
+
+    .subscribe-btn:hover {
+      background-color: #45a049;
+    }
 
 .contact-container {
     display: flex;
@@ -156,7 +245,6 @@ p {
     border-bottom: 1px dashed #eee;
 }
 
-/* Form Styles */
 .contact-form {
     flex: 1;
     min-width: 300px;
@@ -237,7 +325,7 @@ select {
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-/* Footer Styles */
+
 footer {
     background-color: #d35400;
     color: white;
@@ -287,4 +375,25 @@ footer p {
     form, .info-card, .hours-card {
         padding: 20px;
     }
+}
+.item {
+  background-color: #FAF9F7;
+  margin: 1em;
+  padding: 1em;
+  overflow: auto;
+}
+
+.item img {
+  float: right;
+  width: 120px;       
+  height: 120px;      
+  margin-left: 1em;  
+  object-fit: cover;  
+  border-radius: 8px; 
+  border: 1px solid #f0e6d2; 
+}
+.item img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
